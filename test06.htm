@@ -1,0 +1,112 @@
+﻿<html>
+ <head>
+  <title>1. a로 링크 걸기</title>
+ </head>
+ <body>
+ <hr>
+ [ 링크 수업 ]
+ <nav>
+  <a href="test06.htm">a-1</a>
+  <a href="test07.htm">a-2</a>
+ </nav>
+
+  <hr>
+ <h1>a로 링크 걸기</h1>
+ <p> 
+  &lt;a href="경로"&gt; ... &lt;/a&gt; <br>
+  링크 걸린 글자는 밑줄이 생기고 커서가 손모양으로 바뀌며 글자 색상은
+  3가지 중에서 나타남<br>
+  (초기링크=파랑, 활성화링크=빨강, 방문한링크=보라) <br>
+  절대경로로 링크 걸기(URL)
+  <a href="https://www.w3schools.com/html/html_links.asp">
+    w3schools(a tag)
+  </a>
+ </p>
+
+  <h2>상대경로로 링크 걸기(웹브라우저가 처리가능한 종류들)</h2>  
+  <ul>
+   <li>웹문서(*.htm/*.html)로 링크 걸기
+    <a href="test05.htm">이미지 수업</a>
+    <a href="test01.htm">기초 수업</a>
+   </li>
+   <li>이미지파일(*.jpg /*.gif/*.png/...)로 링크 걸기 
+    <a href="cat.jpg">cat</a>
+    <a href="colorpicker2000.png">color</a>
+   </li>
+   <li>동영상파일(*.webm/*.ogg/*.mp4)로 링크 걸기  
+     <a href="frog.mp4">frog</a>
+   </li>
+   <li>텍스트파일(*.txt)로 링크 걸기  
+    <a href="text.txt">text</a>
+   </li>
+  </ul>
+  <h2>웹브라우저가 처리 불가능한 종류들(*.hwp/*.zip/...) </h2>
+   <p>링크 걸면 <a href="html.zip">zip파일</a> 다운로드 됨</p>
+ 
+ <hr>
+ <h3 id="img-h3">이미지에 링크 걸기</h3>
+<p>
+ <a href="https://www.w3schools.com/" title="다있쏘로 이동하기"> 
+  <img src="html5.gif" alt="html5"></a>
+ 
+ <a href="https://www.daum.net/" title="daum으로 이동하기" target="_blank"> 
+  <img src="daum.png" alt="daum" width="150"></a> <br>
+ 
+ 속성 title="..."을 추가하여 툴팁(풍선도움말)을 넣을 수 있음 <br>
+ (툴팁은 링크나 이미지에 주로 활용)
+</p>
+
+ <p> 썸네일 이미지에 활용 <br>
+ <a href="cat.jpg" title="클릭시 원본이미지 보임" target="_blank">
+  <img src="cat.jpg" alt="cat" width="100"></a>  
+ </p>
+
+ <hr>
+ <h3>target=" " 링크 여는 방식 지정</h3>
+ <ol>
+  <li>_self (기본)현재 위치에 링크 열기</li>
+  <li><b>_blank 새탭에서 링크 열기</b></li>
+  <li>_top (프레임구조)전체에 하나로 링크 열기</li>
+  <li>_parent 상위창에 링크 열기</li>
+ </ol>
+
+ <hr>
+  <h4>무료이미지 사이트 링크</h4>
+ <nav> <!-- 메뉴영역 -->
+  <ul> 
+   <li><a href="https://pixabay.com/" target="_blank">
+    https://pixabay.com/</a>
+   </li>
+   <li><a href="https://www.pexels.com/" target="_blank">
+    https://www.pexels.com/</a>
+   </li>
+  </ul>
+ </nav>
+
+ <hr>
+ <h2>email링크 걸기 - mailto: </h2>
+<p>
+ <a href="mailto:class@itwillbs.co.kr">아이티윌부산에 메일 보내기</a>
+ <br>  
+ <a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a>
+ <br> 
+  <a href="mailto:itreset@daum.net" title="이메일 보내기">
+   <img src="img/jpg/finger.jpg" alt="mail" width="150"></a>
+ </p>
+
+ <hr> 
+  <h2>top링크 걸기 - #</h2>
+   <a href="#">↑top</a>
+ 
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
