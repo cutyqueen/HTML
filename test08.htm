@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>form-1</title>
+ </head>
+ <body>
+ <nav>
+  <a href="test08.htm">form-1</a>
+  <a href="test08-1.htm">form-2</a>
+ </nav>
+
+ <hr>
+ <h1> form-1 </h1>
+ <form action="test.jsp" method="post">
+ <h2>input으로 시작하는 폼요소들</h2>
+ <hr>
+ <p>input에 대한 설명문을 label태그로 지정하고 서로 연결해주려면<br>
+  label에는 for의 값을, input에는 id의 값을 서로 일치시킴.
+ </p>
+ <h3>1. input type="text" 주관식. 한 줄 글상자</h3>
+  <p>
+   최소값을 minlength="n"로, 최대값을 maxlength="n"로 지정 가능.<br>
+   상자 길이는 size="n"로 지정 가능.
+  </p>
+
+  <label for="nm">name</label> 
+  <input type="text" id="nm" maxlength="20">
+  <label for="bday">birthday</label> 
+  <input type="text" id="bday" size="10">
+
+ <h3>2. input type="password" 주관식. 암호 글상자</h3> 
+  <label for="pw">password</label> 
+  <input type="password" id="pw" maxlength="12">
+ 
+ <h3>3. textarea ... /textarea  주관식. 큰 글상자</h3>
+  <p>가로 크기는 cols="n" 세로 크기는 rows="n"로 지정</p>
+  <textarea cols="100" rows="10">
+   지원동기
+  </textarea>
+
+ <h3>4. input type="checkbox" 다중선택형 객관식. 체크박스</h3>
+  <p>체크박스과 라디오버튼은 초기값으로 지정할 항목에
+   checked(checked="checked")를 추가함.</p>
+  <p>자신있는 과목은?  <br>
+   <label> <input type="checkbox" checked="checked"> html</label> 
+   <label> <input type="checkbox"> jsp</label>
+   <label> <input type="checkbox" checked="checked"> java</label>
+   <label> <input type="checkbox"> db</label>
+       <!-- label로 input을 감싸줘도 연결 됨 -->
+  </p>
+
+ <h3>5. input type="radio" 단일선택형 객관식. 라디오버튼</h3> 
+ <p>단일선택형이 되려면 선택지들끼리 name의 값을 일치시킴</p>
+  <p>가장 자신있는 과목은?<br>
+    <label> <input type="radio" name="pg" checked> html</label>
+    <label> <input type="radio" name="pg"> jsp</label>
+    <label> <input type="radio" name="pg"> java</label>
+    <label> <input type="radio" name="pg"> db</label>
+  </p>
+  
+ <h3>6. input type="submit/reset/button" 전송/취소/일반 버튼 </h3> 
+ <p>
+  <input type="submit" value="전송"> 
+  <input type="reset" value="취소"> <br>
+   <input type="button" value="버튼" onclick="alert('why?')">
+ </p>
+
+ <h3>6-1. button ... /button 전송용 버튼(취소/일반) </h3> 
+ <p> button태그는 전송용이 기본.<br> 
+    type="reset/button"을 추가하여 취소나 일반버튼으로 변경 가능<br>
+  <button>전송</button> <br>
+  <button type="reset">취소</button>
+  <button type="button"><b>눌러</b>봐
+   <img src="img/tiger.png" width="80" onclick="alert('어흥~')">
+  </button>
+ </p>
+
+ <h3>7. input type="image" 전송용 이미지</h3>
+ <p>이미지 경로는 src로 지정</p> 
+ <label> 호랑이 기운 솟아라~ 
+  <input type="image" src="img/tiger.png" width="100"></label>
+
+ <h3>8. input type="file"  파일 전송용 </h3>
+ <p> 
+  <label>자격증 사본 <input type="file"> </label>
+ </p> 
+ 
+ <h3>9. select ... /select 공간절약형 객관식. 펼침목록(드롭다운리스트)</h3>
+ <p>[9-1] 팀별 회의 시간은?
+  <select>
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+   <option>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option>
+  </select>
+ </p>
+
+ <p>[9-2] 초기값으로 지정할 항목에 
+  selected(selected="selected")를 추가함.<br>
+  팀별 회의 시간은?
+  <select>
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+   <option selected>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option>
+  </select>
+ </p>
+
+ <p>[9-3] 다중선택형은 multiple(multiple="multiple")을 추가함.<br>
+  팀별 회의 시간은? <br>
+  <select multiple>
+   <option>1교시</option>
+   <option>2교시</option>
+   <option selected>3교시</option>
+   <option>4교시</option>
+   <option selected>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option>
+  </select>
+ </p>
+
+ <p>[9-4] 형태를 상자형으로 size="n"을 추가함. <br>
+  팀별 회의 시간은? <br>
+  <select size="5">
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+   <option>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option>
+  </select>
+ </p>
+
+ <p>[9-5] optgroup태그로 항목들을 그룹화 <br>
+  서로 연관된 option들을 optgroup으로 묶어주고
+  label속성으로 해당 그룹의 주제나 제목을 지정.<br><br>
+
+  팀별 회의 시간은?<br>
+  <select>
+   <optgroup label="오전">
+    <option>1교시</option>
+    <option>2교시</option>
+    <option>3교시</option>
+    <option>4교시</option>
+   </optgroup>
+   <optgroup label="오후">
+    <option>5교시</option>
+    <option>6교시</option>
+    <option>7교시</option>
+    <option>8교시</option>
+   </optgroup>
+  </select>
+ </p>
+
+ 
+ <p>[9-6] 팀별 회의 시간은?(오전과 오후 중 각각 선택) <br>
+  <select multiple>
+   <optgroup label="오전">
+    <option>1교시</option>
+    <option selected>2교시</option>
+    <option>3교시</option>
+    <option>4교시</option>
+   </optgroup>
+   <optgroup label="오후">
+    <option>5교시</option>
+    <option selected>6교시</option>
+    <option>7교시</option>
+    <option>8교시</option>
+   </optgroup>
+  </select>
+ </p>
+
+
+ </form>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
