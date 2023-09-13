@@ -1,0 +1,113 @@
+﻿<html>
+ <head>
+  <title>2. a로 내부링크 걸기</title>
+ </head>
+ <body>
+ <hr>
+ [ 링크 수업 ]
+ <nav>
+  <a href="test06.htm">a-1</a>
+  <a href="test06.htm#img-h3">a-1(이미지에 링크 걸기)</a>
+  <a href="test07.htm">a-2</a>
+ </nav>
+
+ <hr>
+ <h1 id="pg-hn">[ photo gallery ]</h1> 
+ <nav>
+  <a href="#hr01">photo-01</a>
+  <a href="#hr02">photo-02</a>
+  <a href="#hr03">photo-03</a>
+  <a href="#hr04">photo-04</a>
+  <a href="#hr05">photo-05</a>
+  <a href="#hr06">photo-06</a>
+  <a href="#hr07">photo-07</a>
+  <a href="#hr08">photo-08</a>
+  <a href="#hr09">photo-09</a>
+  <a href="#hr10">photo-10</a>  
+ </nav>
+
+ <h3>페이지의 특정영역을 찾아 이동하는 링크</h3>
+ <p>
+  이동할 특정영역의 태그에 id를 추가하고<br>
+  링크의 주소값(경로)에 #id값을 지정.<br>
+  (* 다른 페이지의 특정영역으로 이동하는 링크는 <b>abc.htm#def</b> 형식으로 지정.)
+ </p>
+ <pre>
+ &lt;tag <mark>id="def"</mark>&gt;
+     ...
+ &lt;a href="<b>#abc</b>"&gt;...&lt;/a&gt; --- ...을 클릭하면 (아래)로 이동 
+  
+     ...
+ 
+ &lt;tag <b>id="abc"</b>&gt;
+     ...
+ &lt;a href="<mark>#def</mark>"&gt;...&lt;/a&gt; --- ...을 클릭하면 (위)로 이동 
+     ...
+
+ </pre>
+
+ <hr id="hr01">
+ <h2>photo-01</h2>
+ <img src="img/jpg/butterfly.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a>
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr02">
+ <h2>photo-02</h2>
+ <img src="img/jpg/campbell.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a>
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr03">
+ <h2>photo-03</h2>
+ <img src="img/jpg/cat02.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr04">
+ <h2>photo-04</h2>
+ <img src="img/jpg/chernii.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr05">
+ <h2>photo-05</h2>
+ <img src="img/jpg/european.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr06">
+ <h2>photo-06</h2>
+ <img src="img/jpg/mountain.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr07">
+ <h2>photo-07</h2>
+ <img src="img/jpg/pencils.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr08">
+ <h2>photo-08</h2>
+ <img src="img/jpg/shahbaz.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr09">
+ <h2>photo-09</h2>
+ <img src="img/jpg/sunset.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+
+ <hr id="hr10">
+ <h2>photo-10</h2>
+ <img src="img/jpg/sydoztr.jpg" width="800">
+ <br> <a href="#pg-hn">menu</a> 
+ <br><br><br><br><br><br><br>
+ <hr>
+   <a href="#">TOP</a>
+
+
+ </body>
+</html>
